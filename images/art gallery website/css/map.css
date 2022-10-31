@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #151515
+}
+
+.arow {
+    background: #D5966C;
+    border: none;
+    width: 56px;
+    height: 72px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.deskmap {
+    display: none;
+}
+
+.main {
+    font-family: 'Big Shoulders Display', "cursive";
+    background-color: #151515;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    color: #FFFFFF;
+    width: 204px;
+    height: 72px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btns {
+    display: flex;
+    position: absolute;
+}
+
+.btns:hover>.main {
+    background: #D5966C;
+    cursor: pointer;
+}
+
+.btns:hover>.arow {
+    background: #151515;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.map {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', "cursive";
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 28px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', "cursive";
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #D5966C;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.mainbody {
+    background-color: #151515;
+    padding: 48px 16px 56px 16px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 20px;
+}
+
+footer {
+    background: #D5966C;
+    padding: 48px 32px;
+    width: 100%;
+}
+
+footer p {
+    color: #151515;
+    margin: 38px 0;
+}
+
+.fblogo:hover, .instalogo:hover, .twitlogo:hover {
+    cursor: pointer;
+    filter:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(186deg) brightness(100%) contrast(103%);;
+}
+
+.instalogo {
+    margin: 0 20px;
+}
+
+.fblogo, .instalogo, .twitlogo {
+    filter:  brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(20%) hue-rotate(187deg) brightness(94%) contrast(105%);
+}
+
+.tabmap {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .map {
+        display: none;
+    }
+
+    .tabmap {
+        display: block;
+        width: 100%;
+    }
+
+    .btns {
+        left: 39px;
+    }
+
+    .mainbody {
+        display: flex;
+        flex-direction: row;
+        padding: 88px 40px 80px 40px;
+        justify-content: space-between;
+    }
+
+    .main-addres {
+        max-width: 400px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        max-width: 222px;
+    }
+
+    .footer {
+        display: flex;
+        align-items: flex-start;
+        gap: 60px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    footer p {
+        max-width: 280px;
+    }
+
+    .deskmap {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1160px) {
+    .tabmap {
+        display: none;
+    }
+
+    .deskmap {
+        display: block;
+        width: 100%;
+    }
+
+    .btns {
+        left: 156px;
+    }
+
+    .mainbody {
+        padding: 104px 165px 128px;
+    }
+
+    .main-addres {
+        gap: 32px;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    h2 {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    footer {
+        padding: 80px 165px;
+    }
+
+    footer p {
+        max-width: 500px;
+    }
+
+
+
+}

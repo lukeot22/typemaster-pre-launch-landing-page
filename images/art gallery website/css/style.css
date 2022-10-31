@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.herodesk, .img1desk, .img2desk, .img3desk {
+    display: none;
+}
+
+body {
+    /* font-family: 'Outfit', sans-serif; */
+    font-family: 'Big Shoulders Display', "cursive";
+    background: #F2F2F2
+}
+
+.headertxt {
+    padding: 0 16px;
+    row-gap: 32px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.hero {
+    width: 100%;
+}
+h1 {
+    font-family: 'Big Shoulders Display', "cursive";
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+}
+
+button {
+    font-family: 'Big Shoulders Display', "cursive";
+    background-color: #151515;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    color: #FFFFFF;
+    width: 204px;
+    height: 72px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.arow {
+    background-color: #D5966C;
+    width: 56px;
+    height: 72px;
+
+}
+
+.headerbutton {
+    display: flex;
+    width: 260px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headerbutton:hover>button {
+    background: #D5966C;
+    cursor: pointer;
+}
+
+.headerbutton:hover>.arow{
+    background: #151515;
+    cursor: pointer;  
+}
+
+.main-body {
+    padding: 0 16px;
+    margin: 120px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.img1, .img2, .img3 {
+    width: 100%;
+}
+
+.bodyh1 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #151515;
+    margin-bottom: 24px;
+}
+
+.bodytxt2 {
+    background: #151515;
+    padding: 48px 24px;
+}
+
+.bodytxt2 p {
+    color: #FFFFFF;
+}
+
+.bodytxt2 .bodyh1 {
+    color: #FFFFFF;
+}
+
+footer {
+    background: #151515;
+    padding: 48px 32px;
+    width: 100%;
+}
+
+footer p {
+    color: #FFFFFF;
+    margin: 38px 0;
+}
+
+.fblogo:hover, .instalogo:hover, .twitlogo:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(35%) saturate(553%) hue-rotate(338deg) brightness(88%) contrast(89%);
+}
+
+.instalogo {
+    margin: 0 20px;
+}
+
+.herotab, .img1tab, .img2tab, .img3tab {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+.hero, .img1, .img2, .img3 {
+    display: none;
+    }
+
+.herotab {
+    display: block;
+    width: 57%;
+    }
+
+.headertxt {
+    position: relative;
+    width: 44%;
+    row-gap: 48px;
+
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 65px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.mainhead {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: relative;
+    left: -40px;
+    top: -595px;
+}
+
+.img1tab, .img2tab, .img3tab {
+    display: block;
+}
+
+.main-body {
+    margin: 0 40px;
+}
+
+.firsthalf {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -280px;
+}
+
+.img1tab {
+    width: 52%;
+}
+
+.bodytxt1{
+    padding: 50px 36px 76px 0;
+}
+
+.secondhalf {
+    display: flex;
+    gap: 11px;
+}
+
+.img2tab {
+    width: 62%;
+    margin-top: -6px;
+}
+
+.img3tab {
+    width: 100%;
+    margin-top: -6px;
+
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 37%;
+}
+
+.bodytxt2 {
+    height: 100%;
+    padding: 120px 28px 80px 28px;
+}
+
+.bodytxt2 p {
+    max-width: 206px;
+}
+
+.bodytxt2 h1 {
+    max-width: 250px;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    max-width: 280px;
+}
+
+.herodesk, .img1desk, .img2desk, .img3desk {
+    display: none;
+}
+}
+
+@media screen and (min-width: 1160px) {
+
+.herotab, .img1tab, .img2tab, .img3tab {
+    display: none;
+}
+
+.herodesk, .img1desk, .img2desk, .img3desk {
+    display: block;
+}
+
+.herodesk {
+    max-width: 37.5%;
+}
+
+.hederimg {
+    display: flex;
+
+}
+
+.hederback {
+    width: 31.25%;
+    background-color: #151515;
+}
+
+.mainhead {
+    display: flex;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 23%;
+    width: 72%;
+    mix-blend-mode: difference;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 64px;
+}
+
+button {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    font-family: 'Big Shoulders Display', "cursive";
+}
+
+.headertxt {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px 13.5%;
+}
+
+.deskhead {
+    width: 496px;
+}
+
+.img1desk {
+    width: 58%;
+}
+
+.img2desk {
+    width: 58%;
+}
+
+.firsthalf {
+    margin: -100px 4.5% 0 4.5%;
+}
+
+.bodyh1 {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.bodytxt1 {
+    margin-right: 125px;
+}
+
+.secondhalf {
+    margin: 15px 4.5% 0 4.5%;
+    gap: 0px;
+}
+
+.last {
+    gap: 30px;
+    width: 39.7%;
+    margin-left: 30px;
+}
+
+.bodytxt2 {
+    padding: 65px 45px;
+}
+
+footer p {
+max-width: 500px;
+}
+
+footer {
+    padding: 80px 165px;
+}
+
+}

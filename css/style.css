@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tabhedimg, .deskhedimg, .tabbodyimg, .tabbodyimg2, .deskbodyimg, .deskbodyimg2 {
+    display: none;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+}
+
+.firsthed {
+    padding: 23px 6.4% 0 6.4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    width: 160px;
+    height: 52px;
+    border: none;
+    transition: 0.3s;
+}
+
+.firsthed button {
+    color: #162542;
+    background: #E8EFF2;
+}
+
+.firsthed button:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #162542;
+}
+
+.order button {
+    background: #F16718;
+    color: #FFFFFF;
+}
+
+.order button:hover {
+    background: #FF9B62;
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+}
+
+.secondhed {
+    padding: 0 6.4%;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    gap: 6%;
+}
+
+.release {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #7B8BAD;
+    width: 135px;
+}
+
+.hedtext {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 56px;
+}
+
+.mobhedimg {
+    border-radius: 32px;
+    width: 100%;
+    margin-left: 6.4%;
+    margin-top: 64px;
+}
+
+.bodyimg{
+    display: flex;
+    gap: 6.4%;
+    margin-top: 6.4%;
+}
+
+.mobbodyimg {
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+}
+
+.mobbodyimg2 {
+    border-radius: 32px;
+    width: 60%;
+}
+
+.orange {
+    background-color: #F16718;
+    border-radius: 24px;
+    width: 30%;
+    margin-left: -20px;
+}
+
+.bodytxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 70px 6.4%;
+    gap: 24px;
+    margin-bottom: 110px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162542;
+    width: 255px;
+}
+
+.bodytxt p {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162542;
+    width: 327px
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B8BAD;
+    width: 327px
+}
+
+
+footer img {
+    background: #F16718;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    background-size: 65px;
+}
+
+.displaybox, .bluetoothbox, .batterybox, .lightbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 110px;
+}
+
+.display {
+    padding: 22.5px 20px;
+}
+
+.bluetooth {
+    padding: 19px 23.5px;
+}
+
+.battery {
+    padding: 22.5px 17px;
+}
+
+.light {
+    padding: 17px;
+}
+
+.end {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.end p {
+    width: 135px;
+}
+
+.bold {
+    width: 135px;
+    font-weight: bold;
+}
+
+@media (min-width: 777px) {
+    
+.mobhedimg, .mobbodyimg, .mobbodyimg2, .backleft {
+    display: none;
+}
+
+.tabhedimg, .tabbodyimg, .tabbodyimg2 {
+    display: block;
+}
+
+button {
+    width: 180px;
+    height: 60px;
+}
+
+.secondhed {
+    display: flex;
+    gap: 70px;
+    margin-top: 62px;
+}
+
+.tabhedimg {
+    width: 478px;
+    border-radius: 20px;
+}
+
+.tabbodyimg2 {
+    width: 445px;
+    border-radius: 20px;
+}
+
+.tabbodyimg {
+    width: 214px;
+    border-radius: 20px;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+}
+
+.bodyimg {
+    gap: 10px;
+    margin: 6.4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orange {
+    border-radius: 20px;
+    width: 214px;
+    margin-left: 0;
+}
+
+.bodytxt {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 142px;
+}
+
+h2 {
+    text-align: start;
+}
+
+.bodytxt p {
+    text-align: start;
+    width: 398px;
+}
+
+.mainfooter {
+    display: flex;
+    margin: 0 6.4%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.displaybox, .bluetoothbox, .batterybox, .lightbox {
+    align-items: flex-start;
+}
+
+h3 {
+    text-align:start;
+}
+
+footer p {
+    text-align:start;
+    max-width: 281px;
+}
+
+}
+
+@media (min-width: 1160px) {
+
+.tabhedimg, .tabbodyimg, .tabbodyimg2 {
+    display: none;
+}
+
+.deskhedimg, .deskbodyimg, .deskbodyimg2, .backleft {
+    display: block;
+}
+
+.deskhedimg {
+    width: 540px;
+    border-radius: 20px;
+    margin-left: 90px;
+}
+
+.firsthed {
+    padding: 55px 165px 0 165px;
+}
+
+.secondhed {
+    margin-top: 83px;
+    padding: 0 0 0 165px;
+    gap: 30px;
+}
+
+.back {
+    background: #E8EFF2;
+    width: 240px;
+    height: 240px;
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.mainbody {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deskbodyimg {
+    width: 255px;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+    border-radius: 20px;
+}
+
+.deskbodyimg2 {
+    width: 445px;
+    border-radius: 20px;
+}
+
+.orange {
+    width: 255px;
+}
+
+.bodytxt {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 165px 0 30px;
+
+}
+
+.bodytxt p {
+    width: 255px;
+}
+
+.bodyimg {
+    gap: 30px;
+    margin: 30px 0 0 0;
+    align-items: end;
+}
+
+.backleft {
+    background: #E8EFF2;
+    width: 135px;
+    height: 240px;
+    border-start-end-radius: 20px;
+    border-end-end-radius: 20px;
+}
+
+footer {
+    margin: 162px 165px 40px 165px;
+
+}
+
+.displaybox, .bluetoothbox, .batterybox, .lightbox {
+    max-width: 255px;
+}
+
+.mainfooter {
+    margin: 0;
+    gap: 30px;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    justify-content: center
+}
+
+footer p {
+    width: auto;
+}
+
+
+}
